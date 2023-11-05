@@ -1,0 +1,18 @@
+# Bu yaml içerisinde güvenlik olarak root user çalışır. Ve yetenek olarak capabilities içerisinde verilenler konusunda yetkili olur.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-sleeper
+  namespace: default
+spec:
+  containers:
+  - command:
+    - sleep
+    - "4800"
+    image: ubuntu
+    imagePullPolicy: Always
+    name: ubuntu
+    securityContext:
+      capabilities:
+        add: ["NET_ADMIN","SYS_TIME"]
+---
