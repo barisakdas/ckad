@@ -1,0 +1,13 @@
+# Eğer ki bir uygulama dağıtırken otomatik olarak bir servis hesabının monte edilmesini istemiyorsanız bunu `automountServiceAccountToken: false` 
+# komutu ile yaml dosyanıza eklemeniz gereklidir. Aksi takdirde varsayılan işlem olarak otomatik monte edecektir.
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mykubernetesapp
+  labels:
+    type: application
+spec:
+  containers:
+    - name: mykubernetesapp
+      image: mykubernetesapp-image
+  automountServiceAccountToken: false 
