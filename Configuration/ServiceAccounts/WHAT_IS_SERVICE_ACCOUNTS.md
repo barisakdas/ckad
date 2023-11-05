@@ -219,7 +219,7 @@ Ekranda yazan belirteci parçaladığımızda artık şu şekilde görebiliriz.
 
 Burada da gördüğünüz gibi artık belirteç içerisinde `aud ve exp` alanlarını görebilirsiniz.
 
-# Eğerki hala eskisi gibi süresi dolmayan bir belirteç oluşturmak istiyorsak ne yapmalıyız?
+## Eğerki hala eskisi gibi süresi dolmayan bir belirteç oluşturmak istiyorsak ne yapmalıyız?
 Bu durumda artık bir secret komponenti oluşturarak bunun içerisinde servis hesabını elle vermemiz gereklidir.
 
 ```yaml
