@@ -10,4 +10,5 @@ Bu repository yi kendi çalışmalarım sırasında edindiğim bilgiler ve öğr
 ## Hedef
 Çalışmalarım sırasında aldığım notlar ve öğrendiğim dip detay bilgilerin benden sonra bu dökümanları okuyacak kişiler içinde referans bir kaynak olarak kullanılabilmesini amaçlayarak bu repository'yi hazırlıyorum.
 
+## İletişim
 Daha fazla bilgi için bana LinkedIn üzerinden `https://www.linkedin.com/in/barisakdas/` profil adresimden ya da `barisakdas00@gmail.com` mail adresim üzerinden ulaşabilirsiniz.
