@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cpu-resource-constraint
+spec:
+  containers: 
+  - name: sample-app
+    image: sample-app
+    ports:
+      - containerPort: 8080
+    resources:
+      request:
+        memory: "1Gi"
+        cpu: "1"
+      limits:
+        memory: "2Gi"
+        cpu: "2"
+  tolerations:
+  - key: "foo"
+    value: "bar"
+    operator: "Equal"
+    effect: "NoSchedule"

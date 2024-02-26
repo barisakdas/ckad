@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-app-pod
+spec:
+  containers:
+  - name: my-app
+    image: my-app:latest
+    ports:
+    - containerPort: 80
+    livenessProbe:
+      httpGet:
+        path: /health
+        port: 80
+        scheme: HTTP
+      initialDelaySeconds: 15
+      periodSeconds: 20
+      failureThreshold: 3
+      successThreshold: 1
+  restartPolicy: Always
